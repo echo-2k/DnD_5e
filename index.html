@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Character Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>D&D 5e Character Creator</h1>
+    </header>
+    <main>
+        <section id="character-form">
+            <h2>Create Your Character</h2>
+            <form id="create-character">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="race">Race:</label>
+                <select id="race" name="race">
+                    <option value="human">Human</option>
+                    <option value="elf">Elf</option>
+                    <!-- Add more races -->
+                </select>
+                
+                <label for="class">Class:</label>
+                <select id="class" name="class">
+                    <option value="warrior">Warrior</option>
+                    <option value="mage">Mage</option>
+                    <!-- Add more classes -->
+                </select>
+                
+                <!-- Add more fields as needed -->
+                
+                <button type="button" id="create">Create Character</button>
+            </form>
+        </section>
+        <section id="character-output">
+            <h2>Your Character</h2>
+            <div id="character-display"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
